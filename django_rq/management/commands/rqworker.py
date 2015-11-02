@@ -63,6 +63,7 @@ class Command(BaseCommand):
         make_option(
             '--worker-ttl',
             action='store',
+            type="int",
             dest='worker_ttl',
             default=240,
             help='Default worker timeout to be used'
